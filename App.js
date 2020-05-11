@@ -6,8 +6,11 @@
  * @flow strict-local
  */
 import 'react-native-gesture-handler';
-import React, { useEffect } from 'react';
-import Navigator from './Pages/Navigator'
+import React from 'react';
+import Navigator from './Pages/Navigator';
+// import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import configureStore from './store/store';
 
 import {
   SafeAreaView,
@@ -16,17 +19,18 @@ import {
   StatusBar,
 } from 'react-native';
 
+
+const store = configureStore();
+
 const App = () => {
-  useEffect(() => {
-
-  }, [])
   return (
-    <Navigator>
-      <SafeAreaView>
-        <StatusBar barStyle="dark-content" />
-
-      </SafeAreaView>
-    </Navigator>
+    <Provider store = {store}>
+      <Navigator>
+        <SafeAreaView>
+          <StatusBar barStyle="dark-content" />
+        </SafeAreaView>
+      </Navigator>
+    </Provider>
   );
 };
 

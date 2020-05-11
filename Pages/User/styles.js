@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
         padding: 30,
         margin: 10,
         marginBottom: 20,
+        width: '80%',
+        textAlign: 'center',
     },
     text: {
         fontSize: 20,
