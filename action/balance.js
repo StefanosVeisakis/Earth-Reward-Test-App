@@ -1,11 +1,10 @@
+import Web3 from 'web3';
+import abi from '../json/abi.json';
 import {
   GET_BALANCE_SUCCESS,
   GET_BALANCE_FAILURE,
   GET_BALANCE_STARTED,
 } from './type';
-
-import Web3 from 'web3';
-import abi from '../json/abi.json';
 
 const tokenAddress = '0x8EB6D2CE2Db73Fb058dd9e7CB7961F67c42fEfa1';
 const walletAddress = '0xb984cd9fea5bbb4b8a645af9859d27dab9b3b19c';

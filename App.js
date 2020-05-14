@@ -2,7 +2,6 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import {Provider} from 'react-redux';
 import {SafeAreaView, StatusBar} from 'react-native';
-
 import Navigator from './Pages/Navigator';
 import configureStore from './store/store';
 

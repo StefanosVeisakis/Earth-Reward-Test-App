@@ -1,6 +1,10 @@
-if (typeof __dirname === 'undefined') global.__dirname = '/';
+if (typeof __dirname === 'undefined') {
+  global.__dirname = '/';
+}
 
-if (typeof __filename === 'undefined') global.__filename = '';
+if (typeof __filename === 'undefined') {
+  global.__filename = '';
+}
 
 if (typeof process === 'undefined') {
   global.process = require('process');
@@ -12,6 +16,7 @@ if (typeof process === 'undefined') {
     }
   }
 }
+
 global.Buffer = require('buffer').Buffer;
 global.process = require('process');
 global.process.env.NODE_ENV = __DEV__ ? 'development' : 'production';
@@ -27,9 +32,13 @@ if (typeof atob === 'undefined') {
     return new Buffer(b64Encoded, 'base64').toString('binary');
   };
 }
+
 process.browser = false;
 
-if (typeof Buffer === 'undefined') global.Buffer = require('buffer').Buffer;
+if (typeof Buffer === 'undefined') {
+  global.Buffer = require('buffer').Buffer;
+}
+
 global.location = {protocol: 'file:'};
 const isDev = typeof __DEV__ === 'boolean' && __DEV__;
 process.env['NODE_ENV'] = isDev ? 'development' : 'production';

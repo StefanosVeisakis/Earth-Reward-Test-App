@@ -6,6 +6,10 @@ import styles from './styles';
 const Home = props => {
   const {navigation} = props;
 
+  const navigateToUser = () => {
+    navigation.navigate('User');
+  };
+
   return (
     <View style={styles.body}>
       <Image style={styles.logo} source={require('../../assets/logo.jpg')} />
@@ -15,12 +19,7 @@ const Home = props => {
         your lifestyle and live a more environmentally-conscious life. your bit
         your bit for the planet has never been easier….
       </Text>
-      <Button
-        title="My Account"
-        onPress={function() {
-          navigation.navigate('User');
-        }}
-      />
+      <Button title="My Account" onPress={navigateToUser} />
     </View>
   );
 };

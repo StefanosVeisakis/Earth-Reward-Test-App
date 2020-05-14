@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     alignItems: 'center',
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   number: {
     borderWidth: 1,
@@ -16,11 +16,11 @@ const styles = StyleSheet.create({
     margin: 10,
     marginBottom: 20,
     width: '80%',
-    textAlign: 'center',
+    textAlign: 'center'
   },
   text: {
-    fontSize: 20,
-  },
+    fontSize: 20
+  }
 });
 
 export default styles;
