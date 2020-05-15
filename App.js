@@ -7,8 +7,7 @@ import configureStore from './store/store';
 
 const store = configureStore();
 
-const App = () => {
-  return (
+const App = () => (
     <Provider store={store}>
       <Navigator>
         <SafeAreaView>
@@ -16,7 +15,7 @@ const App = () => {
         </SafeAreaView>
       </Navigator>
     </Provider>
-  );
-};
+);
+
 
 export default App;

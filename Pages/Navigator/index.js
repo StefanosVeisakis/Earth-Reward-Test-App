@@ -6,8 +6,7 @@ import User from '../User';
 
 const Stack = createStackNavigator();
 
-const MyStack = () => {
-  return (
+const MyStack = () => (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
@@ -15,6 +14,5 @@ const MyStack = () => {
       </Stack.Navigator>
     </NavigationContainer>
   );
-};
 
 export default MyStack;

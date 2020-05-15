@@ -10,6 +10,7 @@ if (typeof process === 'undefined') {
   global.process = require('process');
 } else {
   const bProcess = require('process');
+
   for (var p in bProcess) {
     if (!(p in process)) {
       process[p] = bProcess[p];
@@ -40,7 +41,9 @@ if (typeof Buffer === 'undefined') {
 }
 
 global.location = {protocol: 'file:'};
+
 const isDev = typeof __DEV__ === 'boolean' && __DEV__;
+
 process.env['NODE_ENV'] = isDev ? 'development' : 'production';
 
 if (typeof localStorage !== 'undefined') {

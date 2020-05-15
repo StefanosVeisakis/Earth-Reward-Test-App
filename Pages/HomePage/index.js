@@ -1,10 +1,10 @@
 import React from 'react';
 import {Image, View, Text, Button} from 'react-native';
-
 import styles from './styles';
 
 const Home = props => {
   const {navigation} = props;
+  const logo = require('../../assets/logo.jpg');
 
   const navigateToUser = () => {
     navigation.navigate('User');
@@ -12,7 +12,7 @@ const Home = props => {
 
   return (
     <View style={styles.body}>
-      <Image style={styles.logo} source={require('../../assets/logo.jpg')} />
+      <Image style={styles.logo} source={logo} />
       <Text style={styles.text}>
         At Earth Rewards®, we believe that keeping things simple and fun is the
         best way to help you measure, reduce and balance the carbon impacts of
