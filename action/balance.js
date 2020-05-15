@@ -1,11 +1,11 @@
 import Web3 from 'web3';
 import abi from '../json/abi.json';
-import {TOKEN_ADDRESS, WALLET_ADDRESS} from '../environment/addresses';
 import {
   GET_BALANCE_SUCCESS,
   GET_BALANCE_FAILURE,
   GET_BALANCE_STARTED
 } from './type';
+import {TOKEN_ADDRESS, WALLET_ADDRESS} from 'react-native-dotenv';
 
 const web3 = new Web3(
   new Web3.providers.HttpProvider(

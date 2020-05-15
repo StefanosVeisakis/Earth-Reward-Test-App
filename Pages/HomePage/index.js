@@ -1,10 +1,10 @@
 import React from 'react';
 import {Image, View, Text, Button} from 'react-native';
 import styles from './styles';
+import logo from '../../assets/logo.jpg';
 
 const Home = props => {
   const {navigation} = props;
-  const logo = require('../../assets/logo.jpg');
 
   const navigateToUser = () => {
     navigation.navigate('User');

@@ -1,2 +1,0 @@
-export const TOKEN_ADDRESS = '0x8EB6D2CE2Db73Fb058dd9e7CB7961F67c42fEfa1';
-export const WALLET_ADDRESS = '0xb984cd9fea5bbb4b8a645af9859d27dab9b3b19c';
